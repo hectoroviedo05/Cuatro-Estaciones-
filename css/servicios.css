@@ -1,0 +1,77 @@
+/* ==========================================================================
+   ESTILOS DE LA SECCIÓN SERVICIOS
+   ========================================================================== */
+.services-container-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 24px 80px 24px;
+    text-align: center;
+}
+
+.services-main-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: var(--text-color);
+    margin-bottom: 10px;
+}
+
+.services-main-divider {
+    width: 60px;
+    height: 3px;
+    background-color: var(--color-principal);
+    margin: 0 auto 50px auto;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    justify-content: center;
+}
+
+.service-card {
+    background-color: #ffffff;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.04);
+    text-align: center;
+    border-top: 4px solid var(--text-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+.service-icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.service-card-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.35rem;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.service-description {
+    font-size: 0.88rem;
+    color: #666666;
+    line-height: 1.7;
+    font-weight: 300;
+}
+
+/* Modificador de color extra para la quinta tarjeta */
+.border-principal { border-top-color: var(--color-principal); }
+.txt-principal { color: var(--color-principal); }
+
+@media (max-width: 768px) {
+    .services-container-section {
+        padding: 40px 16px;
+    }
+}
